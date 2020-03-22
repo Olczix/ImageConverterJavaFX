@@ -6,7 +6,6 @@
 
 <BorderPane id="mainPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
 
-
     <top>
         <HBox alignment="CENTER_RIGHT" prefHeight="40.0" spacing="8.0">
             <children>
@@ -15,8 +14,8 @@
                         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                     </padding>
                 </Label>
-                <Button fx:id="selectDirectoryButton" onAction="#selectFiles" text="Select files" />
-                <Button fx:id="destinationButton" onAction="#selectDestination" text="Select directory" />
+                <Button fx:id="selectFilesButton" onAction="#selectFiles" text="Select files" />
+                <Button fx:id="selectDestinationButton" onAction="#selectDestination" text="Select directory" />
             </children>
             <padding>
                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
@@ -27,15 +26,15 @@
     <center>
         <TableView fx:id="imagesTableView" minWidth="600.0">
             <columns>
-                <TableColumn fx:id="imageNameColumn" maxWidth="1.7976931348623157E308" minWidth="350" text="Image" />
-                <TableColumn fx:id="progressColumn" maxWidth="150" minWidth="141.0" prefWidth="141.0" text="Progress" />
-                <TableColumn fx:id="statusColumn" maxWidth="109.0" minWidth="100" prefWidth="109.0" text="Status" />
+                <TableColumn fx:id="imageNameColumn"  text="Image" />
+                <TableColumn fx:id="progressColumn" text="Progress" />
+                <TableColumn fx:id="statusColumn" text="Status" />
             </columns>
         </TableView>
     </center>
 
     <bottom>
-        <HBox fx:id="controlsBox" alignment="TOP_RIGHT" maxWidth="1.7976931348623157E308" minWidth="600.0" prefHeight="40.0" prefWidth="600.0" spacing="10.0" BorderPane.alignment="CENTER">
+        <HBox fx:id="controlsBox" alignment="TOP_RIGHT" minWidth="600.0" prefHeight="40.0" prefWidth="600.0" spacing="10.0" BorderPane.alignment="CENTER">
 
                 <HBox alignment="CENTER_LEFT" spacing="10.0" prefWidth="300">
                     <children>

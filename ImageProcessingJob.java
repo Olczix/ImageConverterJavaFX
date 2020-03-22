@@ -22,8 +22,8 @@ public class ImageProcessingJob extends Task<Void> {
 
     public File sourceFile;
     public File destination;
-    public SimpleStringProperty status = new SimpleStringProperty("waiting.."); //oczekuje/przetwarzanie.../zakończone
-    public DoubleProperty progressProperty = new SimpleDoubleProperty(0.0);
+    public SimpleStringProperty status;
+    public DoubleProperty progressProperty;
 
     public ImageProcessingJob(File file) {
        this.sourceFile = file;
